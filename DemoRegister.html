@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <!--local-->
+    <link rel="stylesheet" type="text/css" href="profile.css">
+
+	<script src = "angular.min.js"></script>
+
+	<!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title></title>
+</head>
+<body>
+<div class="navbar navbar-inverse"> 
+	<div class="container-fluid">
+
+		<div class="navbar-header">
+      		<a href="#"><img src="images/logo.png" class="logo"></a>
+    	</div>
+
+		<ul class="nav navbar-nav">
+			<li><a href="#">Page 1</a></li>
+      		<li><a href="#">Page 2</a></li>
+      		<li><a href="#">Page 3</a></li>
+		</ul>
+	</div>
+	</div>
+
+<div class="container-fluid">
+<div class="col-md-4"></div>
+<div class="col-md-4">
+	<form name="profile" novalidate>
+		<input type="text" name="name" placeholder="Name" ng-model="name" ng-required="true">
+		<p style="color: white"  ng-show="profile.name.$touched && profile.name.$invalid">Bro!?</p>
+		<br>
+		<input type="text" name="id" placeholder= "ID" ng-model="id" ng-required="true" max="9" min="9">
+		<p style="color: white"  ng-show="profile.ID.$touched && profile.ID.$invalid">Bro!?</p>
+		<br>
+		<input type="submit" name="Hello">
+	</form>
+</div>
+<div class="col-md-4"></div>
+
+
+<!--	<div class="col-md-6 theBox">
+		<div id="picture">
+					<img id = "image" src="C:\Users\ps109\Pictures\1662.jpg">
+		</div>
+		<pre id="name"  style="top: 20px"><b style="font-size: 15px">Name </b> {{FName}} {{LName}}</pre> 
+		<pre id="name"  style="top: 65px"><b style="font-size: 15px">Mail</b> {{Email}}</pre> 
+		<pre id="name"  style="top: 110px"><b style="font-size: 15px">Number</b> {{numb}}</pre>
+		<pre id="clgID"  style="top: 155px"><b style="font-size: 15px">ID</b> {{clgID}}</pre>
+	</div>
+-->
+</div>
+</body>
+</html>

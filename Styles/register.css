@@ -1,0 +1,41 @@
+label{
+	color: #00308F;
+	margin-right: 8px;
+	width: 40px;
+	padding-right: 5px;
+	position: relative;
+}
+
+input {
+    border: 0.5px solid;
+    border-radius: 4px;
+    width: 200px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 3px 6px;
+    text-decoration: none;
+    margin: 0px 120px;
+    cursor: pointer;
+    width: 60px;
+}
+
+select {
+	margin-left: 20px;
+	border: 0.5px solid;
+    border-radius: 4px;
+	width: 200px;
+}
+
+#signup{
+	width: 300px;
+	background-color: #89CFF0;
+	padding: 20px;
+	position: absolute;
+	border-radius: 6px;
+	margin-left: 35%;
+	margin-top: 50px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+<div id="signup">
+	<form method="post" action="/register">	
+		<label>College ID</label>
+			<input type="text" name="collegeID">
+
+		<br><br>
+
+		<label>MOB No.</label>
+			<input type="text" name="mobile" style="margin-left: 5px">
+
+		<br><br>
+
+		<label>Password</label>
+			<input type="password" name="pwd" style="margin-left: 5px">
+
+		<br><br>
+
+		<label>Branch</label>
+		<select name="branch">
+		    <option value="CS">Computer Science</option>
+		    <option value="IT">Information Technology</option>
+		    <option value="Mechanical">Mechanical</option>
+		    <option value="Electronics">Electronics</option>
+  		</select>
+
+  		<br><br>
+
+			<input type="submit" name="SignUp" style="position: center" value="Sign Up">
+	</form>
+</div>
+</body>
+</html>

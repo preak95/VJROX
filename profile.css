@@ -1,0 +1,52 @@
+body {
+	background-image: url("images/background.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+#picture {
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px solid grey;
+	width: 120px;
+	height: 150px; 
+	color: red;
+}
+
+.logo {
+	width: 80px;
+	padding-top: 5px;
+	height: relative;
+}
+
+#image {
+	position: absolute;
+	width: 116px;
+	height: 146px; 
+	color: red;
+}
+
+.theBox {
+	height: 220px;
+    border: 2px solid grey;
+    padding-bottom: 20px;
+}
+
+#lab {
+	font-size: 14px;
+}
+
+#name {
+	position: absolute;
+	width: 400px;
+}
+
+#clgID {
+	position: absolute;
+	width: 400px;
+}
+
+input.ng-invalid.ng-touched {
+	border: 2px solid red;
+}
