@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<style type="text/css">
+	body {
+			background-image: url('diary2.jpg');
+			background-repeat: no-repeat;
+		}
+
+	.center {
+			width: 500px;
+			height: 200px;
+			margin-top: 150px;
+			margin-left: 380px;
+			border: 1px solid;
+			border-radius: 6px;
+			opacity: 0.6; 
+		}
+
+	.classTable{
+			opacity: 0.65;
+			width: 300px;
+			background-color: ;
+			padding: 20px;
+			position: absolute;
+			border-radius: 6px;
+			margin-left: 30%;
+			margin-top: 50px;
+			color: white;
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 500px;
+	}
+
+	th {
+		background-color: #1D1A0C;
+	}
+
+	table, th, td {
+	    border: 1px solid black;
+	}
+
+	td {
+		padding: 5px; 
+	}
+
+	tr[class="inner"] {
+		background-color: #DEB887;
+		color: black;
+		text-align: center;
+	}
+
+	tr:hover {background-color: #46311C}
+
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: #1D1A0C;
+	}
+
+	li {
+	    float: left;
+	}
+
+	li a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	}
+
+	li a:hover {
+	    background-color: #2E5894;
+	}
+	</style>
+</head>
+<body>
+
+<div class="navbar" style="margin-left: -10px; margin-top: -10px; margin-right: -8px">
+	<ul>
+		<form id="dashboard" method="POST" action="/dashboard">
+			<input type="hidden" name="dash" value="value">
+		</form>
+
+		<form id="home" method="POST" action="/welcome">
+			<input type="hidden" name="name" value="value">	
+		</form>
+
+		<form id="logout" method="POST" action="/logout">
+			<input type="hidden" name="name" value="value">	
+		</form>
+
+		<li><a onclick="document.getElementById('home').submit();">Home</a></li>
+		<li><a onclick="document.getElementById('dashboard').submit();">Profile</a></li>
+		<li><a href="/getdata">View</a></li>
+		<li style="float: right;"><a onclick="document.getElementById('logout').submit();">Log out</a></li>
+	</ul>
+</div>
+
+<div class="center">
+		<p style="text-align: center; border-bottom : 1px solid">Welcome Home</p>
+	<div style="margin-left: 135px">
+		
+	</div>
+</div>
+</body>
+</html>

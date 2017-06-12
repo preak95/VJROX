@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<style type="text/css">
+		body {
+			background-image: url('study.jpg');
+			background-repeat: no-repeat;
+		}
+
+		input {
+			border: 1px solid white;
+			border-radius: 6px;
+			padding: 3px;
+			height: 30px;
+			width: 250px;
+			text-align: center;
+			margin-bottom: 20px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+
+<!--Navbar-->
+<div class="navbar" style="margin-left: -10px; margin-top: -10px; margin-right: -8px">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/register">Sign Up</a></li>
+		<li><a href="/login">Sign In</a></li>
+	</ul>
+</div>
+
+<div id="signup">
+	<form method="post" action="/register">	
+			<input type="text" name="name" style="margin-left: 30px;" placeholder="Name">
+
+			<input type="text" name="collegeID" style="margin-left: 30px" placeholder="College ID">
+
+			<input type="text" name="mobile" style="margin-left: 30px" placeholder="Mobile">
+
+			<input type="password" name="pwd" style="margin-left: 30px" placeholder="Password">
+
+		<select name="branch" style=" margin-left: 30px; margin-bottom: 10px; width: 258px; height: 40px; border:none;">
+		    <option value="CS">Computer Science</option>
+		    <option value="IT">Information Technology</option>
+		    <option value="Mechanical">Mechanical</option>
+		    <option value="Electronics">Electronics</option>
+  		</select>
+
+			<input type="submit" name="SignUp" style="position: center; opacity: 1" value="Sign Up">
+	</form>
+</div>
+</body>
+</html>

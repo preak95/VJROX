@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View all</title>
+	<link rel="stylesheet" type="text/css" href="classView.css">
+	<style type="text/css">
+		body {
+			background-image: url('diary2.jpg');
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+
+<div class="navbar" style="margin-left: -10px; margin-top: -10px; margin-right: -8px">
+	<ul>
+		<form id="dashboard" method="POST" action="/dashboard">
+			<input type="hidden" name="dash" value="value">
+		</form>
+
+		<form id="home" method="POST" action="/welcome">
+			<input type="hidden" name="name" value="value">	
+		</form>
+
+		<form id="logout" method="POST" action="/logout">
+			<input type="hidden" name="name" value="value">	
+		</form>
+
+		<li><a onclick="document.getElementById('home').submit();">Home</a></li>
+		<li><a onclick="document.getElementById('dashboard').submit();">Profile</a></li>
+		<li><a href="/getdata">View</a></li>
+		<li style="float: right;"><a onclick="document.getElementById('logout').submit();">Log out</a></li>
+	</ul>
+</div>
+
+<div class="classTable">
+	<table border="1">
+		<tr id="branch"></tr>
+		<tr>
+			<th>Sr.</th>
+			<th>Name</th>
+			<th>College ID</th>
+			<th>Mobile</th>
+		</tr>
+
+		<% for(var i=0; i<values.length; i++) {%>
+   			<tr class="inner"><td><%= i+1 %></td><td><%= values[i].name %></td><td><%= values[i].collegeID %></td><td><%= values[i].mobile %></td></tr>
+		<% } %>
+	</table>
+
+	<br>
+
+	<form method="POST" action="/getdata">
+		<label style="color: #1D1A0C">Branch</label>
+		<select name="branch">
+		    <option value="CS">Computer Science</option>
+		    <option value="IT">Information Technology</option>
+		    <option value="Mechanical">Mechanical</option>
+		    <option value="Electronics">Electronics</option>
+  		</select>
+  		<input type="submit" value="Search">
+	</form>
+</div>
+</body>
+</html>

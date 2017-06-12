@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload</title>
+	<style type="text/css">
+		body {
+			background-image: url('diary2.jpg');
+			background-repeat: no-repeat;
+		}
+
+		.inCenter {
+			width: 200px;
+			height: 200px;
+			opacity: 0.6;
+			border-radius: 6px;
+			margin-left: 36.5%;
+			margin-top: 5px;
+			display: inline-block;
+			position: absolute;
+		}
+
+		input[type = submit]{
+			width: 100px;
+			margin-left: 25px;
+			margin-right: 5px;
+			border-radius: 6px;
+		}
+
+		.ins {
+			width: 200px;
+			margin-top: 20px;
+			height: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body onload = "getDate()">
+<div class="inCenter">
+	<form method="POST" action="/upload" id="data">
+		<input type="text" name="copy_name" placeholder="Name" class="ins"><br>
+		<select name="branch" class="ins" selected="selected">
+		    <option value="CS">Computer Science</option>
+		    <option value="IT">Information Technology</option>
+		    <option value="Mechanical">Mechanical</option>
+		    <option value="Electronics">Electronics</option>
+  		</select>
+  		<input type="date" name="date" hidden="hidden">
+  		<input type="number" name="price" placeholder="Price" class="ins">
+  		<input type="submit" name="send" value="Upload" style="margin-top: 20px;">
+	</form>
+
+	<script type="text/javascript">
+		function getDate() {
+			document.getElementById("data").date.value = new Date();
+			console.log(document.getElementById("data").date.value);
+		}
+	</script>
+</div>
+</body>
+</html>
