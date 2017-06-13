@@ -64,3 +64,15 @@ a[class="anc"]:hover, a[class="anc"]:active {
     width: 260px;
     height: 40px;
 }
+
+a[id="b1"] {
+    padding-right: 150px; 
+    padding-bottom: 90px; 
+    background-color: #B2BEB5;
+}
+
+a[id="b1"]:hover {
+    padding-right: 170px; 
+    padding-bottom: 110px; 
+    background-color: #B2BEB5;
+}
